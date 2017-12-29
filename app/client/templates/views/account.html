@@ -31,14 +31,15 @@
                         {{else}}
                         <em class="edit-name">{{displayName}}</em> 
                         <i class="edit-icon icon-pencil"></i>
-                        {{/if}}                        
+                        {{/if}}
                     </h1>
-                    <h2 class="copyable-address">{{walletIcon}}
+                    <h2 class="copyable-address">
+
                         <!-- <input type="text" value="{{toChecksumAddress address}}" readonly class=""> -->
                         <span>{{toChecksumAddress address}}</span>
                     </h2>
                     <div class="clear"></div>
-                    {{> elements_balance balance=balance changeUnit=true showAllDecimals=true}}
+                    {{> elements_balance balance=balance changeUnit=true showAllDecimals=true}} 
                 </header>
 
 
@@ -122,7 +123,7 @@
                     <ul>
                         <li>
                             <a href="{{pathFor route='sendTo' address=(toChecksumAddress address)}}" title="{{toChecksumAddress address}}">
-                                <i class="icon-arrow-down"></i>
+                                <img src="https://png.icons8.com/cotton/40/000000/card-exchange.png">
                                 {{i18n "wallet.accounts.buttons.deposit"}}
                             </a>
                         </li>
@@ -156,13 +157,13 @@
 
                         <li>
                             <button class="copy-to-clipboard-button">
-                                <i class="icon-docs"></i>
+                                <img src="https://png.icons8.com/cotton/40/000000/copy.png">
                                 {{i18n "wallet.accounts.buttons.copyAddress"}}
                             </button>
                         </li>                        
                         <li>
                             <button class="qrcode-button">
-                                <i class="icon-camera"></i>
+                                <img src="https://png.icons8.com/cotton/40/000000/bank-card-missing.png">
                                 {{i18n "wallet.accounts.buttons.scanQRCode"}}
                             </button>
                         </li>
