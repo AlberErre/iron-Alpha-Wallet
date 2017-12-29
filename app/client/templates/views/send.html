@@ -15,7 +15,13 @@
             <div class="col col-6 mobile-full from">
                 <h3>{{i18n 'wallet.send.from'}}</h3>
 
+                <p id="targetether">
                 {{> dapp_selectAccount_iron accounts=(selectAccounts deployContract) showAccountTypes=true class='send-from'}}
+                </p>
+
+                <script>    
+                document.getElementById("targetether").innerHTML.replace("ETHER", "IRON"); 
+                </script>
                 
             </div>
 
