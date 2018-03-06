@@ -53,11 +53,11 @@
                 </label>
 
                 <p class="send-info">
-                    {{#if $eq (TemplateVar.get "selectedToken") "ether"}}
+                    {{#if $eq (TemplateVar.get "selectedToken") "iron"}}
                         {{#if isEtherUnit}}
-                            {{{i18n 'wallet.send.texts.sendAmount' amount=(dapp_formatBalance (TemplateVar.get "amount") "0,0.[000000000000000000]" "ether")}}}
+                            {{{i18n 'wallet.send.texts.sendAmount' amount=(dapp_formatBalance (TemplateVar.get "amount") "0,0.[000000000000000000]" "iron")}}}
                         {{else}}
-                            {{{i18n 'wallet.send.texts.sendAmountEquivalent' amount=(dapp_formatBalance (TemplateVar.get "amount") "0,0.[000000]") etherAmount=(dapp_formatBalance (TemplateVar.get "amount") "0,0.[000000000000000000]" "ether")}}}
+                            {{{i18n 'wallet.send.texts.sendAmountEquivalent' amount=(dapp_formatBalance (TemplateVar.get "amount") "0,0.[000000]") etherAmount=(dapp_formatBalance (TemplateVar.get "amount") "0,0.[000000000000000000]" "iron")}}}
                         {{/if}}
                         {{TemplateVar.get "dailyLimitText"}}
                     {{else}}
