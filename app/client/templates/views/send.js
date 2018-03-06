@@ -158,7 +158,7 @@ Template['views_send'].onRendered(function(){
     // set the from
     var from = FlowRouter.getParam('from');
     if(from)
-        TemplateVar.setTo('.dapp-select-account.send-from', 'value', FlowRouter.getParam('from').toLowerCase());
+        TemplateVar.setTo('select[name="dapp-select-account"].send-from', 'value', FlowRouter.getParam('from').toLowerCase());
 
 
     // initialize send view correctly when directly switching from deploy view
@@ -242,8 +242,18 @@ Template['views_send'].helpers({
     @method (selectedAccount)
     */
     'selectedAccount': function(){
-        return Helpers.getAccountByAddress(TemplateVar.getFrom('.dapp-select-account', 'value'));
+        return Helpers.getAccountByAddress(TemplateVar.getFrom('.dapp-select-account.send-from', 'value'));
     },
+    /**
+    para pillar las accounts
+    */
+
+    'ownerAccounts': function(){
+        var accounts = EthAccounts.find({}, {sort: {balance: -1}}).fetch();
+        accounts.sort(Helpers.sortByBalance);
+        return accounts;
+    },
+
     /**
     Get the current selected token document
 

@@ -23,8 +23,8 @@
             "texts": {
                 "note": "Note",
                 "balance": "Balance",
-                "connectionErrorMist": "Unable to connect. Please start iron using:<br><br><small><code>__node__</code><br><br>Make sure you set your IPC path to the default one, when using a different <code>datadir</code>, e.g.<br><code>iron --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/ironBank/iron.ipc console</code><br>or<br><code>iron --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.ironBank/iron.ipc console</code>. <br><br>Optional add: <code>--unlock &lt;yourAccount&gt;.</code></small>",
-                "connectionErrorBrowser": "Unable to connect. Please start iron with the following options:<br><br><small><code>__node__</code><br><br>Optional add: <code>--unlock &lt;yourAccount&gt;.</code></small>",
+                "connectionErrorMist": "<small>Ups! you don't have any node running.<br>Please, run a node locally to use iron<br>In case you are a developer, you can use the official GO-iron implementation<br><code>https://github.com/iron-bank/go-IRON</code><br><br>If you are a regular user, download and install <strong>Ganache</strong> and use HOSTNAME:localhost and PORT NUMBER:8545<br><code>http://truffleframework.com/ganache/</code></small>",
+                "connectionErrorBrowser": "<small>Ups! you don't have any node running.<br>Please, run a node locally to use iron<br>In case you are a developer, you can use the official GO-iron implementation<br><code>https://github.com/iron-bank/go-IRON</code><br><br>If you are a regular user, download and install <strong>Ganache</strong> and use HOSTNAME:localhost and PORT NUMBER:8545<br><code>http://truffleframework.com/ganache/</code></small>",
                 "pendingConfirmationsBadge": "Pending Confirmation!",
                 "nodeSyncing": "__blockDiff__ blocks left",
                 "blockReceived": "New block received",

@@ -2,6 +2,37 @@
     <nav>
         <ul>
             <li>
+                <p><h1><strong>iron</strong> Bank Network</h1></p>
+            </li>   
+            <li class="block-info dapp-flex-item  {{#if TemplateVar.get 'syncing'}}syncing{{/if}}">
+                {{#if isWalletMode}}
+
+                    {{#with TemplateVar.get "syncing"}}
+                        <span class="text">
+                            <img src="https://png.icons8.com/office/16/000000/electrical.png">
+                            &nbsp;   
+                            {{$.Session.get "peerCount"}} 
+                            <span class="hide-on-small">{{i18n 'wallet.app.texts.peers'}}</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="https://png.icons8.com/office/16/000000/minecraft-pickaxe.png">&nbsp;
+                            {{i18n "wallet.app.texts.nodeSyncing" blockDiff=blockDiff}}
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            {{progress}}%
+                        </span>
+                        <progress max="100" value="{{progress}}"></progress>
+                    {{else}}
+                        <img src="https://png.icons8.com/office/16/000000/electrical.png">
+                        &nbsp;                        
+                        {{$.Session.get "peerCount"}} <span class="hide-on-small">{{i18n 'wallet.app.texts.peers'}}</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="https://png.icons8.com/office/16/000000/minecraft-pickaxe.png">
+                        &nbsp;{{formattedBlockNumber}}<span class="hide-on-small">&nbsp;iron blocks</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        {{{timeSinceBlock}}}<span class="hide-on-small">{{{timeSinceBlockText}}}</span>
+                    {{/with}}
+                {{/if}}
+            </li>
+            <li>
                 <a href="{{pathFor route='dashboard'}}" class="{{isActiveRoute regex='dashboard'}}">
                     <img src="https://png.icons8.com/cotton/50/000000/electronic-identity-card.png">
                     <span>{{i18n 'wallet.app.buttons.wallet'}}</span>
@@ -12,34 +43,6 @@
                     <img src="https://png.icons8.com/cotton/50/000000/card-exchange.png">
                     <span>{{i18n 'wallet.app.buttons.send'}}</span>
                 </a>
-            </li>            
-            
-            <li class="block-info dapp-flex-item  {{#if TemplateVar.get 'syncing'}}syncing{{/if}}">
-                {{#if isWalletMode}}
-
-                    {{#if $eq ($.Session.get "network") "test"}}
-                        <span class="private-chain" title="{{i18n 'wallet.app.texts.testnetExplain'}}">TEST-NET</span> &nbsp;&nbsp; 
-                    {{/if}}
-                    {{#if $eq ($.Session.get "network") "private"}}
-                        <span class="private-chain" title="{{i18n 'wallet.app.texts.testnetExplain'}}">PRIVATE-NET</span> &nbsp;&nbsp; 
-                    {{/if}}
-
-                    {{#with TemplateVar.get "syncing"}}
-                        <span class="text">
-                            <i class="icon-feed"></i> {{$.Session.get "peerCount"}} <span class="hide-on-small">{{i18n 'wallet.app.texts.peers'}}</span>
-                            &nbsp;&nbsp;|&nbsp;&nbsp;
-                            <i class="icon-layers"></i> {{i18n "wallet.app.texts.nodeSyncing" blockDiff=blockDiff}}
-                            &nbsp;&nbsp;|&nbsp;&nbsp;
-                            <i class="icon-cloud-download"></i> {{progress}}%
-                            <br>
-                        </span>
-                        <progress max="100" value="{{progress}}"></progress>
-                    {{else}}
-                        <i class="icon-feed"></i> {{$.Session.get "peerCount"}} <span class="hide-on-small">{{i18n 'wallet.app.texts.peers'}}</span>
-                        &nbsp;&nbsp;|&nbsp;&nbsp;
-                        <i class="icon-layers"></i> {{formattedBlockNumber}} <i class="icon-clock" style="margin-left: 10px;"></i> {{{timeSinceBlock}}} <span class="hide-on-small">{{{timeSinceBlockText}}}</span>
-                    {{/with}}
-                {{/if}}
             </li>
             <li>
                 <a href="{{pathFor route='contracts'}}" class="{{isActiveRoute regex='contracts'}}">
@@ -50,8 +53,7 @@
             <li class="wallet-balance">
                 <h3>{{i18n 'wallet.app.texts.balance'}}</h3>
                 {{> elements_balance balance=totalBalance changeUnit=true}}
-            </li>
-
+            </li> 
             </ul>
     </nav>
 </template>
