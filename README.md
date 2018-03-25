@@ -15,6 +15,4 @@ Starting dapp using [Meteor](https://meteor.com/install)
     $ cd app
     $ meteor
 
-Go to http://localhost:3000
-
 
