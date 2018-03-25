@@ -1,18 +1,16 @@
-# Iron Wallet Ðapp
+# iron-Core Development (Ðapp)
 
-The Iron wallet.
-
-**NOTE** The wallet is not yet official released,
+**NOTE** iron Dapp is not yet official released,
 can contain severe bugs!
 
 
-## Development
+## Development testing
 
 Start an `iron` node and the app using meteor and open http://localhost:3000 in your browser:
 
     $ iron --rpccorsdomain "http://localhost:3000" --rpc console
 
-Starting the wallet dapp using [Meteor](https://meteor.com/install)
+Starting dapp using [Meteor](https://meteor.com/install)
 
     $ cd app
     $ meteor
