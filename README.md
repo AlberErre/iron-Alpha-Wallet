@@ -14,5 +14,3 @@ Starting dapp using [Meteor](https://meteor.com/install)
 
     $ cd app
     $ meteor
-
-
