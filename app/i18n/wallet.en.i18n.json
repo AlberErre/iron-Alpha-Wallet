@@ -33,7 +33,7 @@
                 "waitingForBlocks": "Waiting for blocks..",
                 "testnetExplain": "",
                 "noAccounts": {
-                    "title": "You have no accounts yet",
+                    "title": "You have no accounts yet", 
                     "text": "You need to create at least one account with a strong password."
                 }
             },
