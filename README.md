@@ -7,4 +7,4 @@
 ## Contributions
 Please mind that part of the code is still undocumented - no contribution guidelines are in place yet.
 
-Contributions are welcome!
+Contributions are encouraged and more than welcome!
