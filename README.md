@@ -1,16 +1,10 @@
-# iron-Core Development (Ðapp)
+# iron-Core Development <img align="right" src="https://github.com/ironBankNetwork/iron-core/blob/master/iron.png" height="250px" alt="iron logo">
 
-**NOTE** iron Dapp is not yet official released,
-can contain severe bugs!
+**NOTE** iron Dapp is still under alpha release, thus may contain severe bugs!
 
+#### 🔧 For technical matters, feel free to contribute using [issues](https://github.com/ironBankNetwork/iron-core/issues)
 
-## Development testing
+## Contributions
+Please mind that part of the code is still undocumented - no contribution guidelines are in place yet.
 
-Start an `iron` node and the app using meteor and open http://localhost:3000 in your browser:
-
-    $ iron --rpccorsdomain "http://localhost:3000" --rpc console
-
-Starting dapp using [Meteor](https://meteor.com/install)
-
-    $ cd app
-    $ meteor
+Contributions are encouraged and more than welcome!

@@ -23,8 +23,8 @@
             "texts": {
                 "note": "Note",
                 "balance": "Balance",
-                "connectionErrorMist": "<small>Ups! you don't have any node running.<br>Please, run a node locally to use iron.<br><br>In case you are a developer, you can use the official GO-iron implementation<br><code>https://github.com/iron-bank/go-IRON</code><br><br>In case you are a regular user, download and install <strong>Ganache</strong>, using 'localhost' as HOSTNAME and '8545' as PORT NUMBER in the settings configuration<br><code>http://truffleframework.com/ganache/</code></small>",
-                "connectionErrorBrowser": "<small>Ups! you don't have any node running.<br>Please, run a node locally to use iron.<br><br>In case you are a developer, you can use the official GO-iron implementation<br><code>https://github.com/iron-bank/go-IRON</code><br><br>In case you are a regular user, download and install <strong>Ganache</strong>, using 'localhost' as HOSTNAME and '8545' as PORT NUMBER in the settings configuration<br><code>http://truffleframework.com/ganache/</code></small>",
+                "connectionErrorMist": "<small>Ups! you don't have any node running.<br>Please, run a node locally to use iron.<br><br>In case you are a developer, you can use the official GO-iron implementation<br><code>https://github.com/ironBankNetwork/go-IRON</code><br><br>In case you are a regular user, download and install <strong>Ganache</strong>, using 'localhost' as HOSTNAME and '8545' as PORT NUMBER in the settings configuration<br><code>http://truffleframework.com/ganache/</code></small>",
+                "connectionErrorBrowser": "<small>Ups! you don't have any node running.<br>Please, run a node locally to use iron.<br><br>In case you are a developer, you can use the official GO-iron implementation<br><code>https://github.com/ironBankNetwork/go-IRON</code><br><br>In case you are a regular user, download and install <strong>Ganache</strong>, using 'localhost' as HOSTNAME and '8545' as PORT NUMBER in the settings configuration<br><code>http://truffleframework.com/ganache/</code></small>",
                 "pendingConfirmationsBadge": "Pending Confirmation!",
                 "nodeSyncing": "__blockDiff__ blocks left",
                 "blockReceived": "New block received",
@@ -33,7 +33,7 @@
                 "waitingForBlocks": "Waiting for blocks..",
                 "testnetExplain": "",
                 "noAccounts": {
-                    "title": "You have no accounts yet",
+                    "title": "You have no accounts yet", 
                     "text": "You need to create at least one account with a strong password."
                 }
             },
