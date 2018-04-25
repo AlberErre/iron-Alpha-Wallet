@@ -1,4 +1,4 @@
-# iron-Core Development <img align="right" src="https://github.com/ironBankNetwork/iron-core/blob/master/PoolPartyToken-small.png" height="250px" alt="iron logo">
+# iron-Core Development <img align="right" src="https://github.com/ironBankNetwork/iron-core/blob/master/PoolPartyToken-small.png" height="250px" alt="PoolParty">
 
 **NOTE** iron Dapp is still under alpha release, thus may contain severe bugs!
 
